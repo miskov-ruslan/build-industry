@@ -1,0 +1,36 @@
+/*---------------------------------------------------------------------------
+	[Buttons]
+---------------------------------------------------------------------------*/
+.btn {
+  color: #222222;
+  font-style: italic;
+  text-decoration: underline;
+  .border-radius(3px);
+  .box-shadow(inset 1px 1.7px 2px rgba(254, 251, 219, 0.75));
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 4px 0 0;
+  position: relative;
+  zoom:1;
+}
+
+.btn-yellow {
+  .background-image(linear-gradient(to top, #F8C90F 0%, #F8C90F 30%, #FEDF63 77%, #FEDF63 100%));
+  border: 1px solid #FFC000;
+  min-width: 136px;
+  height: 30px;
+
+  &:hover {
+    .background-image(linear-gradient(to top, #F8C90F 0%, #F8C90F 60%, #FEDF63 97%, #FEDF63 100%));
+  }
+
+  .lt-ie9 & {
+    background: #f9cf23;
+    .background-image(linear-gradient(#F8C90F 0%, #F8C90F 30%, #FEDF63 77%, #FEDF63 100%));
+
+    &:hover {
+      .background-image(linear-gradient(#F8C90F 0%, #F8C90F 60%, #FEDF63 97%, #FEDF63 100%));
+    }
+  }
+}
